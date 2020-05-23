@@ -561,6 +561,10 @@
 .btn-primary:hover {
   background: #DE3104;
 }
+.btn-gradient {
+  background: linear-gradient(to right, #1ad3b8, #4bee88);
+  color: #fff;
+}
 .btn-animated-light {
   border: 1px solid transparent;
   border-color: #fff;
@@ -631,6 +635,44 @@
   color: #fff;
 }
 .btn-animated-nav:hover:before {
+  width: 100%;
+}
+.btn-animated-project-light {
+  border: 1px solid transparent;
+  border-color: #fff;
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.2);
+}
+.btn-animated-project-light:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -2;
+}
+.btn-animated-project-light:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #fff;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.btn-animated-project-light:hover {
+  color: #000;
+}
+.btn-animated-project-light:hover:before {
   width: 100%;
 }
 
@@ -709,6 +751,16 @@
   position: relative;
 }
 
+#navbar.scrolled {
+  background: linear-gradient(to right, #1ad3b8, #4bee88);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.521);
+}
+
 .navbar-without-header {
   background: linear-gradient(to right, #1ad3b8, #4bee88);
 }
@@ -729,7 +781,7 @@
   border-radius: 50%;
   border: 3px solid #FFFFFF;
   position: absolute;
-  top: 10px;
+  top: 7px;
   right: 25px;
   /* Hamburger lines */
   /* When Overlay is in effect */
@@ -828,12 +880,11 @@
   color: #FFFFFF;
   font-size: 2.3rem;
   padding: 0.5rem 1rem;
-  transition: 0.4s ease;
+  transition: 0.5s ease;
   background: transparent;
 }
 #overlay ul li a:hover {
   width: 100%;
-  background: #FF5629;
 }
 #overlay div#overlay.show {
   width: 100%;
