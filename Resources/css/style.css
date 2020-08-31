@@ -460,19 +460,19 @@
   text-align: right;
 }
 .text-primary {
-  color: #FF5629;
+  color: #ff5629;
 }
 .text-primary-light-1 {
-  color: #FF967A;
+  color: #ff967a;
 }
 .text-primary-light-2 {
-  color: #FF7551;
+  color: #ff7551;
 }
 .text-primary-dark-1 {
-  color: #DE3104;
+  color: #de3104;
 }
 .text-primary-dark-2 {
-  color: #AE2400;
+  color: #ae2400;
 }
 .text-dark-1 {
   color: #000000;
@@ -487,16 +487,20 @@
   color: #202020;
 }
 .text-light-1 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .text-light-2 {
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 .text-light-3 {
-  color: #E8E8E8;
+  color: #e8e8e8;
 }
 .text-light-4 {
-  color: #E0E0E0;
+  color: #e0e0e0;
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #1ad3b8, #4bee88);
 }
 
 .bg-dark-1 {
@@ -512,19 +516,19 @@
   background: #202020;
 }
 .bg-light-1 {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 .bg-light-2 {
-  background: #F0F0F0;
+  background: #f0f0f0;
 }
 .bg-light-3 {
-  background: #E8E8E8;
+  background: #e8e8e8;
 }
 .bg-light-4 {
-  background: #E0E0E0;
+  background: #e0e0e0;
 }
 .bg-primary {
-  background: #FF5629;
+  background: #ff5629;
 }
 
 .btn {
@@ -536,6 +540,9 @@
   border-radius: 0;
   cursor: pointer;
   position: relative;
+}
+.btn:focus {
+  outline: none;
 }
 .btn-transparent {
   border: 1px solid #fff;
@@ -555,11 +562,11 @@
   color: #fff;
 }
 .btn-primary {
-  background: #FF5629;
+  background: #ff5629;
   color: #fff;
 }
 .btn-primary:hover {
-  background: #DE3104;
+  background: #de3104;
 }
 .btn-gradient {
   background: linear-gradient(to right, #1ad3b8, #4bee88);
@@ -601,6 +608,7 @@
 .btn-animated-light:hover:before {
   width: 100%;
 }
+
 .btn-animated-nav {
   border: 1px solid transparent;
   border-color: transparent;
@@ -627,7 +635,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #FF5629;
+  background-color: #ff5629;
   transition: all 0.3s;
   z-index: -1;
 }
@@ -688,7 +696,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 2px solid #FFFFFF;
+  border: 2px solid #ffffff;
 }
 
 .box-shadow {
@@ -738,7 +746,7 @@
 }
 #main-header {
   background: url("../../Vendors/showcase.jpg") no-repeat center center/cover;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #navbar {
@@ -779,7 +787,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   position: absolute;
   top: 7px;
   right: 25px;
@@ -787,7 +795,7 @@
   /* When Overlay is in effect */
   /* When Unclicked */
 }
-#hamburger input[type=checkbox] {
+#hamburger input[type="checkbox"] {
   width: 65px;
   height: 65px;
   z-index: 2000;
@@ -800,7 +808,7 @@
   position: absolute;
   width: 1.5rem;
   height: 2px;
-  background: #FFFFFF;
+  background: #ffffff;
   display: inline-block;
   z-index: 1500;
   transition: 0.3s all cubic-bezier(0.8, 0.5, 0.5, 1);
@@ -815,25 +823,26 @@
   top: -10px;
   left: 0;
 }
-#hamburger input[type=checkbox]:checked, #hamburger input[type=checkbox]:checked ~ #line {
+#hamburger input[type="checkbox"]:checked,
+#hamburger input[type="checkbox"]:checked ~ #line {
   position: fixed;
 }
-#hamburger input[type=checkbox]:checked ~ #line {
+#hamburger input[type="checkbox"]:checked ~ #line {
   background: transparent;
 }
-#hamburger input[type=checkbox]:checked ~ #line::after {
+#hamburger input[type="checkbox"]:checked ~ #line::after {
   transform: rotate(45deg);
   top: 0;
 }
-#hamburger input[type=checkbox]:checked ~ #line::before {
+#hamburger input[type="checkbox"]:checked ~ #line::before {
   transform: rotate(-45deg);
   top: 0;
 }
-#hamburger input[type=checkbox]:checked:hover ~ #line::after,
-#hamburger input[type=checkbox]:checked:hover ~ #line::before {
-  background: #FF5629;
+#hamburger input[type="checkbox"]:checked:hover ~ #line::after,
+#hamburger input[type="checkbox"]:checked:hover ~ #line::before {
+  background: #ff5629;
 }
-#hamburger input[type=checkbox]:not(:checked) + #overlay {
+#hamburger input[type="checkbox"]:not(:checked) + #overlay {
   width: 0;
 }
 
@@ -877,7 +886,7 @@
 }
 #overlay ul li a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 2.3rem;
   padding: 0.5rem 1rem;
   transition: 0.5s ease;
@@ -902,8 +911,8 @@
   transition: all 0.6s;
 }
 #overlay #close-btn:hover {
-  color: #FF5629;
-  border-color: #FF5629;
+  color: #ff5629;
+  border-color: #ff5629;
 }
 
 #showcase {
@@ -915,7 +924,7 @@
   /* background: url("./../../Vendors/showcase.jpg") no-repeat center center/cover; */
   background-attachment: fixed;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
 }
 #showcase h1 {
@@ -926,7 +935,8 @@
 #showcase h3 {
   animation: fromLeft 1s;
 }
-#showcase > div > div, #showcase #scrolldown img {
+#showcase > div > div,
+#showcase #scrolldown img {
   animation: fromBottom 1s;
 }
 
@@ -951,7 +961,7 @@
   transition: 0.8s all;
 }
 .popup-container {
-  background: #E8E8E8;
+  background: #e8e8e8;
   padding: 1rem 2rem;
   width: 96%;
   max-width: 600px;
@@ -968,7 +978,7 @@
   cursor: pointer;
 }
 .popup-container .close:hover {
-  color: #FF5629;
+  color: #ff5629;
 }
 
 .show {
@@ -995,7 +1005,7 @@
 }
 #contact input:focus,
 #contact textarea:focus {
-  outline: 2px solid #FF5629;
+  outline: 2px solid #ff5629;
 }
 
 #main-footer {
@@ -1032,7 +1042,12 @@ body {
   margin: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -1144,7 +1159,7 @@ img {
   margin-top: 10px;
 }
 #about #skills .skill .progress {
-  background: #FF5629;
+  background: #ff5629;
   height: 10px;
 }
 #about #skills .skill:nth-child(1) .progress {
