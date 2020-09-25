@@ -1,0 +1,17 @@
+/* This stylesheet is not developed using sass */
+.popup {
+  text-align: justify;
+}
+
+.popup h1,
+.popup .popup-btns {
+  text-align: center;
+}
+
+.popup .popup-container {
+  font-variant: petite-caps;
+  font-size: 1.2rem;
+}
+.popup .popup-btns {
+  font-size: 1rem;
+}
