@@ -150,7 +150,7 @@
   z-index: 1;
 }
 .btn-animated-light:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -160,7 +160,7 @@
   z-index: -2;
 }
 .btn-animated-light:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -187,7 +187,7 @@
   z-index: 1;
 }
 .btn-animated-nav:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -197,7 +197,7 @@
   z-index: -2;
 }
 .btn-animated-nav:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -222,10 +222,10 @@
   overflow: hidden;
   z-index: 1;
   border: 1px solid transparent;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(0 0 0 / 20%);
 }
 .btn-animated-project-light:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -235,7 +235,7 @@
   z-index: -2;
 }
 .btn-animated-project-light:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -247,6 +247,7 @@
 }
 .btn-animated-project-light:hover {
   color: #000;
+  background: #fff;
 }
 .btn-animated-project-light:hover:before {
   width: 100%;
@@ -313,7 +314,7 @@
   }
 }
 #main-header {
-  background: url("../../Vendors/showcase.jpg") no-repeat center center/cover;
+  background: url('../../Vendors/showcase.jpg') no-repeat center center/cover;
   color: #ffffff;
 }
 
@@ -363,7 +364,7 @@
   /* When Overlay is in effect */
   /* When Unclicked */
 }
-#hamburger input[type="checkbox"] {
+#hamburger input[type='checkbox'] {
   width: 65px;
   height: 65px;
   z-index: 2000;
@@ -382,35 +383,35 @@
   transition: 0.3s all cubic-bezier(0.8, 0.5, 0.5, 1);
 }
 #hamburger #line::after {
-  content: "";
+  content: '';
   top: 10px;
   left: 0;
 }
 #hamburger #line::before {
-  content: "";
+  content: '';
   top: -10px;
   left: 0;
 }
-#hamburger input[type="checkbox"]:checked,
-#hamburger input[type="checkbox"]:checked ~ #line {
+#hamburger input[type='checkbox']:checked,
+#hamburger input[type='checkbox']:checked ~ #line {
   position: fixed;
 }
-#hamburger input[type="checkbox"]:checked ~ #line {
+#hamburger input[type='checkbox']:checked ~ #line {
   background: transparent;
 }
-#hamburger input[type="checkbox"]:checked ~ #line::after {
+#hamburger input[type='checkbox']:checked ~ #line::after {
   transform: rotate(45deg);
   top: 0;
 }
-#hamburger input[type="checkbox"]:checked ~ #line::before {
+#hamburger input[type='checkbox']:checked ~ #line::before {
   transform: rotate(-45deg);
   top: 0;
 }
-#hamburger input[type="checkbox"]:checked:hover ~ #line::after,
-#hamburger input[type="checkbox"]:checked:hover ~ #line::before {
+#hamburger input[type='checkbox']:checked:hover ~ #line::after,
+#hamburger input[type='checkbox']:checked:hover ~ #line::before {
   background: #ff5629;
 }
-#hamburger input[type="checkbox"]:not(:checked) + #overlay {
+#hamburger input[type='checkbox']:not(:checked) + #overlay {
   width: 0;
 }
 
@@ -431,7 +432,7 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  content: "";
+  content: '';
   top: 0;
   right: 0;
   width: 0;
@@ -523,16 +524,19 @@
   z-index: 3000;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(224 224 224 / 85%);
   opacity: 0;
   visibility: hidden;
   transition: 0.8s all;
 }
 .popup-container {
-  background: #e8e8e8;
+  background: #fbfbfb;
   padding: 1rem 2rem;
   width: 96%;
   max-width: 600px;
+  /* filter: blur(0px); */
+  /* -webkit-filter: blur(0px); */
+  border-radius: 10px;
   max-height: 88vh;
   overflow-y: scroll;
   position: absolute;
@@ -603,7 +607,7 @@ html {
 }
 
 body {
-  font-family: "Quicksand", Geneva, Tahoma, sans-serif;
+  font-family: 'Quicksand', Geneva, Tahoma, sans-serif;
   color: #202020;
 }
 
@@ -708,7 +712,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
+  content: '';
   margin-top: -15px;
   margin-left: -15px;
 }
@@ -729,17 +733,29 @@ img {
   margin-top: 10px;
 }
 #about #skills .skill .progress {
-  background: #ff5629;
-  height: 10px;
-}
-#about #skills .skill:nth-child(1) .progress {
+  background: #ffffff42;
+  height: 33px;
+  border-radius: 1000px;
   width: 80%;
+  margin-left: 20px;
 }
-#about #skills .skill:nth-child(2) .progress {
+#about #skills .skill.python .progress {
+  width: 65%;
+}
+#about #skills .skill.java .progress {
+  width: 70%;
+}
+#about #skills .skill.javascript .progress {
   width: 75%;
 }
-#about #skills .skill:nth-child(3) .progress {
-  width: 78%;
+#about #skills .skill.react .progress {
+  width: 70%;
+}
+#about #skills .skill.html .progress {
+  width: 75%;
+}
+#about #skills .skill.css .progress {
+  width: 75%;
 }
 #about #skills img {
   width: 150px;
@@ -793,16 +809,6 @@ img {
   #main-footer .social-media img {
     width: 35px;
     height: 35px;
-  }
-
-  #about #skills .skill:nth-child(1) .progress {
-    width: 50%;
-  }
-  #about #skills .skill:nth-child(2) .progress {
-    width: 45%;
-  }
-  #about #skills .skill:nth-child(3) .progress {
-    width: 48%;
   }
 }
 @media only screen and (max-width: 360px) {
