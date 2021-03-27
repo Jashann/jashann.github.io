@@ -30,6 +30,10 @@
 .text-primary {
   color: #fff;
 }
+.popup .text-primary{
+  color: #ff5629
+}
+
 .text-primary-light-1 {
   color: #ff967a;
 }
