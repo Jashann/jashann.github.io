@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 /* This stylesheet is not developed using sass */
-.popup {
+.popup{
   text-align: justify;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+#about{
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .popup h1,
@@ -48,4 +54,8 @@
 
 .popup-container::-webkit-scrollbar {
   width: 10px;
+}
+
+.skill img {
+    margin: 20px !important;
 }

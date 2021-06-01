@@ -18,23 +18,29 @@ nav.addEventListener("click", (e) => {
 // Popup opening and Closing
 const projects = document.querySelector("#projects");
 projects.onclick = function (e) {
-  const header = document.querySelector("#navbar.scrolled");
-  let href = e.target.href;
+  const header = document.querySelector('#navbar.scrolled')
+  let href = e.target.href
+
+  isOpened = e.target.classList.contains('show')
+
   //Opening
   if (href) {
-    if (href.includes("popup")) {
-      header.style.display = "none";
-      let start = href.search("#");
-      let popupId = href.substring(start);
-      let popup = document.querySelector(popupId);
-      popup.classList.add("show");
+    if (href.includes('popup')) {
+      header.style.display = 'none'
+      let start = href.search('#')
+      let popupId = href.substring(start)
+      let popup = document.querySelector(popupId)
+      popup.classList.add('show')
     }
   }
+
   //Closing
-  if (e.target.classList.contains("close")) {
-    header.style.display = "flex";
-    let openedPopup = e.target.parentElement.parentElement;
-    openedPopup.classList.remove("show");
+  if (e.target.classList.contains('close') || isOpened) {
+    header.style.display = 'flex'
+    let openedPopup = document.querySelector('.show')
+
+    console.log(openedPopup)
+    openedPopup.classList.remove('show')
   }
 };
 

@@ -30,8 +30,8 @@
 .text-primary {
   color: #fff;
 }
-.popup .text-primary{
-  color: #ff5629
+.popup .text-primary {
+  color: #1bd3b6;
 }
 
 .text-primary-light-1 {
@@ -100,7 +100,7 @@
   background: #e0e0e0;
 }
 .bg-primary {
-  background: #ff5629;
+  background: #1bd3b6;
 }
 
 .btn {
@@ -134,11 +134,11 @@
   color: #fff;
 }
 .btn-primary {
-  background: #ff5629;
+  background: #1bd3b6;
   color: #fff;
 }
 .btn-primary:hover {
-  background: #de3104;
+  background: #2ec0aa;
 }
 .btn-gradient {
   background: linear-gradient(to right, #1ad3b8, #4bee88);
@@ -207,7 +207,7 @@
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #ff5629;
+  background-color: #18b19a;
   transition: all 0.3s;
   z-index: -1;
 }
@@ -413,7 +413,7 @@
 }
 #hamburger input[type='checkbox']:checked:hover ~ #line::after,
 #hamburger input[type='checkbox']:checked:hover ~ #line::before {
-  background: #ff5629;
+  background: #1bd3b6;
 }
 #hamburger input[type='checkbox']:not(:checked) + #overlay {
   width: 0;
@@ -729,7 +729,10 @@ img {
   margin-top: 3rem;
   width: 300px;
   height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 16px 3px #77777799;
 }
+
 #about #skills .skill {
   display: flex;
   justify-content: flex-start;
