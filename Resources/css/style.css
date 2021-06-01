@@ -556,7 +556,7 @@
   cursor: pointer;
 }
 .popup-container .close:hover {
-  color: #ff5629;
+    color: #1bd3b6;
 }
 
 .show {
