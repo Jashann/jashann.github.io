@@ -116,6 +116,7 @@
   position: relative;
   border-radius: 13px;
   font-weight: 900;
+  font-family: 'Quicksand';
 }
 .btn:focus {
   outline: none;
@@ -668,6 +669,17 @@ img {
 #projects-heading {
   font-size: 2em;
   text-transform: capitalize;
+}
+#projects h1,
+#projects h2,
+#projects h3,
+#projects h4,
+#projects h5,
+#projects h6 {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Cabin';
 }
 #projects .project {
   display: flex;
