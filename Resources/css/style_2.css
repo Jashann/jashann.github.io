@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 /* This stylesheet is not developed using sass */
-.popup{
-  text-align: justify;
-  font-family: 'Noto Sans JP', sans-serif;
+#about {
+  font-family: 'Cabin', 'Quicksand';
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444343;
 }
-#about{
-  font-family: 'Noto Sans JP', sans-serif;
+#about .about-content {
+  text-align: justify;
 }
 
 .popup h1,
@@ -14,10 +16,6 @@
   text-align: center;
 }
 
-.popup .popup-container {
-  font-variant: petite-caps;
-  font-size: 1.2rem;
-}
 .popup .popup-btns {
   font-size: 1rem;
 }
@@ -39,7 +37,6 @@
   background-color: transparent;
 }
 
-
 ::-webkit-scrollbar-thumb {
   background-color: #c2c3c3;
   border-radius: 20px;
@@ -51,11 +48,10 @@
   background-color: #26daac;
 }
 
-
 .popup-container::-webkit-scrollbar {
   width: 10px;
 }
 
 .skill img {
-    margin: 20px !important;
+  margin: 20px !important;
 }

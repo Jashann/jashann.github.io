@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Quicksand&display=swap');
+
 /* Utility Classes */
 .d-inline-block {
   display: inline-block;
@@ -112,6 +114,8 @@
   border-radius: 0;
   cursor: pointer;
   position: relative;
+  border-radius: 13px;
+  font-weight: 900;
 }
 .btn:focus {
   outline: none;
@@ -122,12 +126,12 @@
 }
 .btn-transparent:hover {
   background: #fff;
-  color: #000;
+  color: #3c3b3b;
 }
 .btn-light {
   border: 1px solid #fff;
   background: #fff;
-  color: #000;
+  color: #3c3b3b;
 }
 .btn-light:hover {
   background: rgba(0, 0, 0, 0.1);
@@ -162,6 +166,7 @@
   height: 100%;
   background-color: transparent;
   z-index: -2;
+  border-radius: 13px;
 }
 .btn-animated-light:before {
   content: '';
@@ -173,9 +178,10 @@
   background-color: #fff;
   transition: all 0.3s;
   z-index: -1;
+  border-radius: 13px;
 }
 .btn-animated-light:hover {
-  color: #000;
+  color: #3c3b3b;
 }
 .btn-animated-light:hover:before {
   width: 100%;
@@ -237,6 +243,7 @@
   height: 100%;
   background-color: transparent;
   z-index: -2;
+  border-radius: 13px;
 }
 .btn-animated-project-light:before {
   content: '';
@@ -248,9 +255,10 @@
   background-color: #fff;
   transition: all 0.3s;
   z-index: -1;
+  border-radius: 13px;
 }
 .btn-animated-project-light:hover {
-  color: #000;
+  color: #3c3b3b;
   background: #fff;
 }
 .btn-animated-project-light:hover:before {
@@ -318,7 +326,8 @@
   }
 }
 #main-header {
-  background: url('../../Vendors/showcase.jpg') no-repeat center center/cover;
+  background: linear-gradient(to right, #0000003d, #00000038),
+    url(../../Vendors/showcase.jpg) no-repeat center center/cover;
   color: #ffffff;
 }
 
@@ -532,6 +541,10 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.8s all;
+  font-family: 'Cabin', 'Quicksand';
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #444343;
 }
 .popup-container {
   background: #fbfbfb;
@@ -556,7 +569,7 @@
   cursor: pointer;
 }
 .popup-container .close:hover {
-    color: #1bd3b6;
+  color: #1bd3b6;
 }
 
 .show {
@@ -677,6 +690,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 13px;
 }
 #projects .project-content img {
   width: 100px;
