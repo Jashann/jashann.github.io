@@ -3,11 +3,19 @@
 /* This stylesheet is not developed using sass */
 
 .transparent-background {
-    color: #fff;
-    background: #00000014;
-    border-radius: 13px;
-    padding: 1rem 0;
-    margin: 0 1.5rem;
+  background: #00000014;
+  border-radius: 13px;
+  padding: 1rem 0;
+  margin: 0 1.5rem;
+}
+.project-content .transparent-background {
+  margin: 0 1.5rem;
+}
+
+@media (max-width: 1218px) {
+  .transparent-background {
+    margin: 0;
+  }
 }
 
 #about {
