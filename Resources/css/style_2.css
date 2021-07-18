@@ -57,10 +57,6 @@
   background-color: #26daac;
 }
 
-.popup-container::-webkit-scrollbar {
-  width: 10px;
-}
-
 .skill img {
   margin: 20px !important;
 }
