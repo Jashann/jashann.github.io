@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
 /* This stylesheet is not developed using sass */
+
+.text-primary {
+    color: #fff;
+    background: #00000014;
+    border-radius: 13px;
+    padding: 1rem 0;
+    margin: 0 1.5rem;
+}
+
 #about {
   font-family: 'Cabin', 'Quicksand';
   text-align: center;
