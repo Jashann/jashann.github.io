@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 
 *, body {
@@ -8,9 +8,10 @@
 }
 
 body {
-  font-family: 'Josefin Sans', serif;
+  font-family: 'Maven Pro', serif;
   background: #fff;
   overflow: overlay;
+  font-weight: 400;
 }
 
 .navbar {
@@ -127,7 +128,7 @@ body {
 
 
 // Profile image 
-.profile-image-container {
+.profile-image-container, .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +139,7 @@ body {
     max-width: 400px;
     width: 100%;
     height: auto;
-    border-radius: 26px;
+    border-radius: 50%;
 }
 
 .text-justify {
@@ -153,4 +154,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.travel {
+    .categories {
+      display: flex;
+  }
+
+  .category {
+      background: #1a1a1a;
+      color: #fff;
+      margin-right: 20px;
+      padding: 10px;
+      border-radius: 100px;
+  }
+
+  .category {
+      background: #1a1a1a;
+      color: #fff;
+      margin-right: 20px;
+      padding: 10px 20px;
+      border-radius: 100px;
+  }
+
+    .category-active {
+      background: #fff;
+      color: #1a1a1a;
+  }
 }

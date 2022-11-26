@@ -24,6 +24,7 @@ export default function ContactPage() {
                 <div className='mt-3'>
                   <p>Name: Jashanjot Gill</p>
                   <p>Email: {URL_ROUTES.a_email}</p>
+                  <p>Email: {URL_ROUTES.a_email_personal}</p>
                   <p>Location: {URL_ROUTES.location}</p>
                 </div>
               </div>

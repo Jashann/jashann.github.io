@@ -9,8 +9,12 @@ export const URL_ROUTES = {
     about:                      "/about-me",
     contact:                    "/contact-me",
 
+    other_travel:               "miscellaneous/travel",
+
     a_linkedIn:                 "https://www.linkedin.com/in/jashan7/",
     a_github:                   "https://github.com/Jashann",
     a_email:                    "gilljs5@myumanitoba.ca",
+    a_email_personal:           "jashangill3592@gmail.com",
     location:                   "Winnipeg, MB",
 }
+
