@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 
 *, body {
@@ -8,10 +8,9 @@
 }
 
 body {
-  font-family: 'Maven Pro', serif;
+  font-family: 'Josefin Sans', serif;
   background: #fff;
   overflow: overlay;
-  font-weight: 400;
 }
 
 .navbar {
@@ -126,12 +125,27 @@ body {
   flex-direction: column;
 }
 
+ion-icon {
+  font-size: 16px;
+}
+
 
 // Profile image 
 .profile-image-container, .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.in-flex-center {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in-flex-center > ion-icon {
+    margin-left: 0.3rem;
+    margin-right: 0.2rem;
 }
 
 .profile-image {

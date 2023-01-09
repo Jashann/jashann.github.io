@@ -13,7 +13,7 @@ export default function FunFacts() {
   return (
     <div className='my-5'>
         <div className='flex-center'>
-            <button onClick={handleShow} className='btn btn-primary'> Fun Facts <ion-icon name="arrow-down-circle-outline"></ion-icon> </button>
+            <button onClick={handleShow} className='btn btn-primary in-flex-center '> Fun Facts <ion-icon size="large" name="arrow-down-circle-outline"></ion-icon> </button>
         </div>
 
         {

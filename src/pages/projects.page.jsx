@@ -97,7 +97,7 @@ export default function ProjectPage() {
                 </label>
               </div>
 
-              <button onClick={clearHandler} className='project-btn'>Clear </button>
+              <button onClick={clearHandler} className='project-btn'>Clear <ion-icon class="ms-1" name="close-circle-outline"></ion-icon> </button>
             </fieldset>
           </div>
 
