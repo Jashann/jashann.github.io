@@ -9,6 +9,16 @@ export const CATEGORIES = {
 
 export const PROJECTS = [
     {
+        title: "THOUGHTS SHARING - DJANGO BASED APP",
+        summary: "This is a cloud-based app where users could create account to read other users' articles, and share their ideas on such articles, and write their own articles.",
+        website: "http://jashangill3592.pythonanywhere.com/",
+        github: "https://github.com/Jashann/django-articles-app",
+        learnMore: URL_ROUTES.projects_thoughts,
+        tools:  "Django, Restful API, SQL, JavaScript, Server-side Rendering, Authentication",
+        category: CATEGORIES.personal,
+        tags:   [ CATEGORIES.personal, CATEGORIES.web ]
+    },
+    {
         title: "BUDGET IT - In Progress",
         summary: "An interactive app that you could connect your bank account or create your account manually, and it records all your expenses and income sources by specific month and year, and show you in graphs in user-friendly, and visually understandable way. The apps predicts the projected income and expenses depending on the past months. All the recorded data could be exported into excel and pdf files.",
         // website: "https://thoughts-sharing.herokuapp.com/",
@@ -26,16 +36,6 @@ export const PROJECTS = [
         tools:  "( Java, Java Swing ) & ( JavaScript, HTML5, CSS, Bootstrap )",
         category: CATEGORIES.group,
         tags:   [ CATEGORIES.group, CATEGORIES.data ]
-    },
-    {
-        title: "THOUGHTS SHARING - DJANGO BASED APP",
-        summary: "This is a web-based app where users could create account to read other users' articles, and share their ideas on such articles, and write their own articles.",
-        website: "https://thoughts-sharing.herokuapp.com/",
-        github: "https://github.com/Jashann/django-articles-app",
-        learnMore: URL_ROUTES.projects_thoughts,
-        tools:  "Django, Restful API, SQL, JavaScript, Server-side Rendering, Authentication",
-        category: CATEGORIES.personal,
-        tags:   [ CATEGORIES.personal, CATEGORIES.web ]
     },
     {
         title: "SMART DICTIONARY",
