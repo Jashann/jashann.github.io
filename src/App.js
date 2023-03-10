@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   HashRouter,
   Route,
@@ -36,7 +35,7 @@ function App() {
           
           <Routes>
             <Route path={URL_ROUTES.index}                  element={ <IndexPage /> } />
-            <Route path={URL_ROUTES.projects}               element={ <ProjectPage /> } />
+            <Route path={URL_ROUTES.projects}               element={ <ProjectPage/> } />
             <Route path={URL_ROUTES.about}                  element={ <AboutPage /> } />
             <Route path={URL_ROUTES.contact}                element={ <ContactPage /> } />
             <Route path={URL_ROUTES.other_travel}           element={ <TravelPage /> } />

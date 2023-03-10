@@ -7,6 +7,26 @@
     box-sizing: border-box;
 }
 
+// For rounded look
+.btn, .form-control, .project, .project-btn {
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover, .project-btn:hover {
+  transform: scale(1.05);
+}
+
+.form-check .form-check-input {
+  border-radius: 50%;
+}
+
+#toggle-theme > ion-icon {
+  font-size: 30px;
+  margin-top: 6px
+}
+
+
 body {
   font-family: 'Josefin Sans', serif;
   background: #fff;
