@@ -193,8 +193,8 @@ export default function ProjectPage() {
               onClick={(e) => setDisplayAll(!displayAll)}
               className="project-btn"
             >
-              {displayAll ? 'Show Few' : `Show All`}{' '}
-              <ion-icon name="arrow-down"></ion-icon>
+              {displayAll ? <span> Show Few <ion-icon class="mt-1" name="arrow-up"></ion-icon> </span> : <span> Show All <ion-icon class="mt-1" name="arrow-down"></ion-icon> </span> }
+
             </button>
           </div>
         </div>

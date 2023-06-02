@@ -30,7 +30,7 @@
 body {
   font-family: 'Josefin Sans', serif;
   background: #fff;
-  overflow: overlay;
+  line-height: 1.7;
 }
 
 .navbar {
@@ -169,7 +169,6 @@ ion-icon {
 }
 
 .profile-image {
-    max-width: 100%;
     max-width: 400px;
     width: 100%;
     height: auto;
