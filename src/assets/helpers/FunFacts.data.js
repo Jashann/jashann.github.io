@@ -1,6 +1,5 @@
 export const facts = [
-    "I love traveling and have traveled to 5 countries so far (Canada, USA, India, Mexico, and Singapore), check out my travel page (IN PROGRESS) to see some of the best parts of the world.",
-    "I am a big celebrity, just kidding! But if you google my name ('Jashanjot Gill') you will find me easily.",
-    "Was this website made in 1990, it looks black and white only? Yeah, I went in past and created this design so visitors focus on content rather than colors or graphics.",
-    "Where was the design copied from? Well it's result of my efforts to make you read. I love it that you are reading about me :) ",
-]
+  'Buckle up, because you’re about to embark on a journey with me, Jashanjot Gill! I’m a seasonal traveler who’s left footprints in five countries so far - Canada, USA, India, Mexico, and Singapore. Want a sneak peek into my adventures? My travel page (still under construction) is your ticket to some of the world’s most breathtaking sights!',
+  'You’ve probably noticed my website’s retro black and white design. Did I time travel back to the 1990s to create it? Not quite! I chose this minimalist design to keep your focus on the content rather than the colors or graphics.',
+  'And no, I didn’t copy this design from anywhere. It’s all my own creation, designed to keep you reading. And guess what? It worked! You’re here, learning all about me. Thanks for sticking around!',
+];

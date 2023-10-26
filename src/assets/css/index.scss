@@ -26,6 +26,13 @@
   margin-top: 6px
 }
 
+.main-button {
+    color: #fff;
+    background-color: #1f1f1f38;
+    border: 3px double white;
+    backdrop-filter: blur(10px);
+}
+
 
 body {
   font-family: 'Josefin Sans', serif;
@@ -56,10 +63,26 @@ body {
     height: 95vh;
     width: 100%;
     text-align: center;
-    padding: 0 100px;
+    padding: 0 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .main-content {
+      max-width: 800px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-content-text {
+      background: #28282878;
+      color: #fff;
+      border-radius: 30px;
+      backdrop-filter: blur(10px);
+    }
 
     .btn-outline-primary {
         color: #ffffff;
