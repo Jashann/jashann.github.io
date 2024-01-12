@@ -60,70 +60,90 @@ export default function ProjectPage() {
 
         <div className="row">
           <div className="my-5 col-12 col-md-3">
+
             <fieldset className="form-group">
               <legend>Filter By</legend>
 
               <div className="form-check">
                 <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  onChange={(e) => setIsGroup(!isGroup)}
-                  checked={isGroup}
-                  id="checkboxGroup"
+                    className="form-check-input"
+                    type="radio"
+                    name="projectType"
+                    value="group"
+                    onChange={(e) => {
+                      clearHandler()
+                      setIsGroup(e.target.checked);
+                    }}
+                    checked={isGroup}
+                    id="radioGroup"
                 />
-                <label className="form-check-label" htmlFor="checkboxGroup">
+                <label className="form-check-label" htmlFor="radioGroup">
                   Group Projects
                 </label>
               </div>
 
               <div className="form-check">
                 <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  onChange={(e) => setIsPersonal(!isPersonal)}
-                  checked={isPersonal}
-                  id="checkboxPersonal"
+                    className="form-check-input"
+                    type="radio"
+                    name="projectType"
+                    value="personal"
+                    onChange={(e) => {
+                      clearHandler()
+                      setIsPersonal(e.target.checked);
+                    }}
+                    checked={isPersonal}
+                    id="radioPersonal"
                 />
-                <label className="form-check-label" htmlFor="checkboxPersonal">
+                <label className="form-check-label" htmlFor="radioPersonal">
                   Personal Projects
                 </label>
               </div>
 
               <div className="form-check">
                 <input
-                  className="form-check-input"
-                  type="checkbox"
-                  value=""
-                  onChange={(e) => setIsData(!isData)}
-                  checked={isData}
-                  id="checkboxData"
+                    className="form-check-input"
+                    type="radio"
+                    name="projectType"
+                    value="data"
+                    onChange={(e) => {
+                      clearHandler()
+                      setIsData(e.target.checked);
+                    }}
+                    checked={isData}
+                    id="radioData"
                 />
-                <label className="form-check-label" htmlFor="checkboxData">
+                <label className="form-check-label" htmlFor="radioData">
                   Data Structures & Algorithms
                 </label>
               </div>
 
               <div className="form-check">
                 <input
-                  className="form-check-input"
-                  type="checkbox"
-                  onChange={(e) => setIsWeb(!isWeb)}
-                  checked={isWeb}
-                  value=""
-                  id="checkboxWeb"
+                    className="form-check-input"
+                    type="radio"
+                    name="projectType"
+                    value="web"
+                    onChange={(e) => {
+                      clearHandler()
+                      setIsWeb(e.target.checked);
+                    }}
+                    checked={isWeb}
+                    id="radioWeb"
                 />
-                <label className="form-check-label" htmlFor="checkboxWeb">
+                <label className="form-check-label" htmlFor="radioWeb">
                   Web Development
                 </label>
               </div>
 
               <button onClick={clearHandler} className="project-btn">
                 Clear{' '}
-                <ion-icon class="ms-1" name="close-circle-outline"></ion-icon>{' '}
+                <ion-icon className="ms-1" name="close-circle-outline"></ion-icon>
+                {' '}
               </button>
             </fieldset>
+
+
           </div>
 
           <div className="my-5 col-12 col-md-9">
@@ -189,13 +209,16 @@ export default function ProjectPage() {
                 <></>
               )
             )}
-            <button
-              onClick={(e) => setDisplayAll(!displayAll)}
-              className="project-btn"
-            >
-              {displayAll ? <span> Show Few <ion-icon class="mt-1" name="arrow-up"></ion-icon> </span> : <span> Show All <ion-icon class="mt-1" name="arrow-down"></ion-icon> </span> }
 
-            </button>
+            {filteredProjects.length > 3 && (
+                <button
+                    onClick={(e) => setDisplayAll(!displayAll)}
+                    className="project-btn"
+                >
+                  {displayAll ? <span> Show Few <ion-icon className="mt-1" name="arrow-up"></ion-icon> </span> :
+                      <span> Show All <ion-icon className="mt-1" name="arrow-down"></ion-icon> </span>}
+                </button>
+            )}
           </div>
         </div>
       </div>
