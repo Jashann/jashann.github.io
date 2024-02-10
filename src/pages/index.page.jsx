@@ -14,10 +14,7 @@ export default function IndexPage() {
               <br />
               I'm Jashan, pursuing the Bachelors in Computer Science at
               University of Manitoba, with a keen interest in developing
-              scalable software and system design. I'm skilled in Java, C++, C,
-              C#, SQL, and Python, and have experience in both frontend and
-              backend development using JavaScript, PHP, Django, React, VueJs,
-              AJAX, and SQL. My portfolio includes a diverse range of
+              scalable. My portfolio includes a diverse range of
               applications, from data processing and visualization tools to
               versatile general-purpose programs.
             </p>
