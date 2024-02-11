@@ -10,11 +10,11 @@ export default function IndexPage() {
         <div className="main-content">
           <div className="main-content-text lead p-4 mb-5">
             <p className="text-justify">
-              Hi there,
+              Hello there,
               <br />
-              I'm Jashan, pursuing the Bachelors in Computer Science at
-              University of Manitoba, with a keen interest in developing
-              scalable. My portfolio includes a diverse range of
+              I'm Jashan, currently pursuing the Bachelors in Computer Science at
+              University of Manitoba, with a focus on developing
+              scalable and reliable backend systems. My portfolio includes a diverse range of
               applications, from data processing and visualization tools to
               versatile general-purpose programs.
             </p>
