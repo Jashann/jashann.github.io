@@ -2,13 +2,14 @@ import React from 'react'
 import FunFacts from '../components/funFacts.component'
 import ProfileImage from '../components/profileImage.component';
 import Work from '../components/work.component';
+import Contact from "../components/contact.component";
 
 
 export default function AboutPage() {
   return (
     <div className="about">
-      <div className="container my-5">
-        <ProfileImage />
+      <div className="container mt-5">
+        {/*<ProfileImage />*/}
         <div className="mt-5 text-justify">
           <p className="py-1">
             I am currently enrolled in the Bachelor of Science program at the
@@ -17,25 +18,26 @@ export default function AboutPage() {
           </p>
 
           <p className="py-1">
-            I am proficient in Java, C++, C, C#, SQL, and Python. I have
-            experience in both front and back-end development, utilizing
-            JavaScript, TypeScript, NodeJS, Django, React, VueJs, jQuery, AJAX,
-            and SQL. I am familiar with tools such as Docker, Git, AWS, and
-            JetBrains workspace.
+            I am proficient in <span className="font-aladin">Java, C++, C, C#, SQL, and Python</span>. I have
+            experience in both <span className="font-aladin">front and back-end development</span>, utilizing
+            <span className="font-aladin"> JavaScript, TypeScript, NodeJS, Django, React, VueJs, jQuery, AJAX,
+            and SQL</span>. I am familiar with tools such as <span className="font-aladin">Docker, Git, AWS, and
+            JetBrains workspace</span> .
           </p>
 
           <p className="py-1">
-            I regularly participate in competitive programming contests to
+            I regularly participate in <span className="font-aladin">competitive programming</span> contests to
             network with like-minded individuals and enhance my knowledge of
             Data Structures and Algorithms. My portfolio includes programs for
-            data processing and visualization as well as general-purpose
-            applications.
+            <span className="font-aladin"> data processing and visualization</span>
+             as well as general-purpose applications.
             <div className="py-2"></div>
           </p>
         </div>
 
         <Work />
-        <FunFacts />
+        <Contact />
+        {/*<FunFacts />*/}
       </div>
     </div>
   );

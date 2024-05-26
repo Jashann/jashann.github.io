@@ -76,22 +76,6 @@ export default function Navbar({ toggleHandle }) {
                       About{' '}
                     </Link>
                   </li>
-                  <li>
-                    <Link
-                      className="in-flex-center align-items-start"
-                      onClick={closeMenu}
-                      to={URL_ROUTES.contact}
-                      rel="noreferrer"
-                    >
-                      {' '}
-                      <ion-icon
-                        class="ms-2"
-                        size="large"
-                        name="mail-outline"
-                      ></ion-icon>{' '}
-                      Contact{' '}
-                    </Link>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -125,15 +109,6 @@ export default function Navbar({ toggleHandle }) {
               >
                 {' '}
                 <ion-icon name="person-outline"></ion-icon> About{' '}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link in-flex-center align-items-start"
-                to={URL_ROUTES.contact}
-              >
-                {' '}
-                <ion-icon name="mail-outline"></ion-icon> Contact{' '}
               </Link>
             </li>
           </ul>

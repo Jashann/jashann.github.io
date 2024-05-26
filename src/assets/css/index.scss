@@ -8,7 +8,7 @@
 }
 
 // For rounded look
-.btn, .form-control, .project, .project-btn {
+.btn, .form-control, .project, .project-btn, .contact, .contact-data {
   border-radius: 30px;
   transition: 0.3s;
 }
@@ -38,6 +38,12 @@ body {
   font-family: 'Josefin Sans', serif;
   background: #fff;
   line-height: 1.7;
+  font-size: 18px;
+}
+
+.font-aladin {
+  font-family: 'Aladin', serif;
+  font-size: 1.3rem;
 }
 
 .navbar {
@@ -143,7 +149,7 @@ body {
 }
 
 // Projects Page
-.project {
+.project, .contact-data {
   border: 1px solid #eee;
 }
 
@@ -237,4 +243,11 @@ ion-icon {
       background: #fff;
       color: #1a1a1a;
   }
+}
+
+.about {
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

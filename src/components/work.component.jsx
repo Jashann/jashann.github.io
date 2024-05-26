@@ -27,9 +27,9 @@ export default function Work() {
                                 <b>{work.title}</b> - <b>{work.company}</b> ({work.location}) ({work.duration})
                             </p>
                             <ul>
-                                {
-                                    work.description.map( desText => <li>  {desText} </li> )
-                                }
+                                {work.description.map((desText, index) => (
+                                    <li key={index} dangerouslySetInnerHTML={{ __html: desText }}></li>
+                                ))}
                             </ul>
                         </div>
                         )}

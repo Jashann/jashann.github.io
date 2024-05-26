@@ -11,7 +11,7 @@ export const PROJECTS = [
   {
     title: 'THOUGHTS SHARING - DJANGO BASED APP',
     summary:
-      "This is a cloud-based app where users could create account to read other users' articles, and share their ideas on such articles, and write their own articles.",
+      "A cloud-based app where users could create account to read other users' articles, and share their ideas on such articles, and write their own articles.",
     website: 'http://jashangill3592.pythonanywhere.com/',
     github: 'https://github.com/Jashann/django-articles-app',
     learnMore: URL_ROUTES.projects_thoughts,

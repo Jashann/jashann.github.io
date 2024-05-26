@@ -15,7 +15,7 @@ import IndexPage from "./pages/index.page"
 import ProjectPage from "./pages/projects.page"
 import AboutPage from "./pages/about.page"
 import NotFoundPage from "./pages/not-found.page"
-import ContactPage from "./pages/contact.page"
+import ContactComponent from "./components/contact.component"
 import TravelPage from "./pages/travel.page"
 
 // Projects
@@ -37,7 +37,7 @@ function App() {
             <Route path={URL_ROUTES.index}                  element={ <IndexPage /> } />
             <Route path={URL_ROUTES.projects}               element={ <ProjectPage/> } />
             <Route path={URL_ROUTES.about}                  element={ <AboutPage /> } />
-            <Route path={URL_ROUTES.contact}                element={ <ContactPage /> } />
+            <Route path={URL_ROUTES.contact}                element={ <ContactComponent /> } />
             <Route path={URL_ROUTES.other_travel}           element={ <TravelPage /> } />
 
             {/* Projects */}
