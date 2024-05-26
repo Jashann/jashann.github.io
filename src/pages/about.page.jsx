@@ -29,7 +29,7 @@ export default function AboutPage() {
             I regularly participate in <span className="font-aladin">competitive programming</span> contests to
             network with like-minded individuals and enhance my knowledge of
             Data Structures and Algorithms. My portfolio includes programs for
-            <span className="font-aladin"> data processing and visualization</span>
+            <span className="font-aladin"> data processing and visualization </span>
              as well as general-purpose applications.
             <div className="py-2"></div>
           </p>
