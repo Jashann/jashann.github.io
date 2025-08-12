@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CATEGORIES, PROJECTS } from '../assets/helpers/PROJECTS.data';
 import { Link } from 'react-router-dom';
+import BackgroundOrbs from '../components/backgroundOrbs.component';
 
 export default function ProjectPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -37,7 +38,8 @@ export default function ProjectPage() {
   }
 
   return (
-    <div style={{ paddingTop: '100px', minHeight: '100vh' }}>
+    <div style={{ paddingTop: '100px', minHeight: '100vh', position: 'relative' }}>
+      <BackgroundOrbs />
       <div className="section-vision">
         <h2 style={{ textAlign: 'center', marginBottom: '1rem' }}>Project Portfolio</h2>
         <p style={{ textAlign: 'center', color: 'var(--text-secondary)', marginBottom: '3rem' }}>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { WORK_EXPERIENCE } from '../assets/helpers/WORK.data';
+import BackgroundOrbs from '../components/backgroundOrbs.component';
 
 export default function AboutPage() {
   const [activeSection, setActiveSection] = useState('experience');
@@ -13,7 +14,8 @@ export default function AboutPage() {
   };
 
   return (
-    <div style={{ paddingTop: '100px', minHeight: '100vh' }}>
+    <div style={{ paddingTop: '100px', minHeight: '100vh', position: 'relative' }}>
+      <BackgroundOrbs />
       {/* Section Tabs */}
       <div className="section-vision">
         <div style={{ 

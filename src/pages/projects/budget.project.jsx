@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { URL_ROUTES } from '../../assets/helpers/URL_ROUTES.routes';
+import BackgroundOrbs from '../../components/backgroundOrbs.component';
 import Image1 from "./../../assets/img/projects/budget-it/1.png";
 
 export default function ProjectBudgetIt() {
@@ -66,7 +67,8 @@ export default function ProjectBudgetIt() {
   ];
 
   return (
-    <div style={{ paddingTop: '100px', minHeight: '100vh' }}>
+    <div style={{ paddingTop: '100px', minHeight: '100vh', position: 'relative' }}>
+      <BackgroundOrbs />
       <div className="section-vision">
         {/* Project Header */}
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
