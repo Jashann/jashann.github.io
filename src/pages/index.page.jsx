@@ -54,12 +54,12 @@ export default function IndexPage() {
             <div style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>Co-op Positions</div>
           </div>
           <div className="glass-panel glass-light" style={{ padding: '1rem 2rem', borderRadius: '16px' }}>
-            <div style={{ fontSize: '1.5rem', fontWeight: '600', color: 'var(--text-primary)' }}>200k+</div>
-            <div style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>Users Served</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: '600', color: 'var(--text-primary)' }}>100K+</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>Lines of Code</div>
           </div>
           <div className="glass-panel glass-light" style={{ padding: '1rem 2rem', borderRadius: '16px' }}>
-            <div style={{ fontSize: '1.5rem', fontWeight: '600', color: 'var(--text-primary)' }}>60%</div>
-            <div style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>Performance Boost</div>
+            <div style={{ fontSize: '1.5rem', fontWeight: '600', color: 'var(--text-primary)' }}>95%</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>Bug-Free Deploys</div>
           </div>
         </div>
       </div>

@@ -106,9 +106,8 @@ export default function ProjectPage() {
         {/* Projects Grid */}
         <div className="grid-vision grid-3">
           {filteredProjects.map((project, index) => (
-            <div key={project.title} className="card-vision glass-heavy floating" style={{
-              animation: `fadeInUp 0.6s ease-out ${index * 0.1}s backwards`,
-              animationDelay: `${index * 2}s`
+            <div key={project.title} className="card-vision glass-heavy" style={{
+              animation: `fadeInUp 0.15s ease-out ${index * 0.015}s backwards`
             }}>
               <div style={{ marginBottom: '1rem' }}>
                 <h3 style={{ fontSize: '1.3rem', marginBottom: '0.5rem', color: 'var(--text-primary)' }}>
