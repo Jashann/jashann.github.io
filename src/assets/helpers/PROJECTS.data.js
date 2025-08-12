@@ -9,6 +9,15 @@ export const CATEGORIES = {
 
 export const PROJECTS = [
   {
+    title: 'Money Lens',
+    summary:
+      'A personal finance web application that makes money management intuitive and user-friendly. Features secure financial data import through bank connections and CSV uploads, with powerful search, filter, and categorization tools. Includes interactive graphs, statistics, and custom spending/savings goal tracking.',
+    github: 'https://github.com/Money-Lens/Money-Lens-App',
+    tools: 'React, Node.js, Express, MongoDB, Plaid API, Chart.js, JWT Auth, Material-UI',
+    category: CATEGORIES.group,
+    tags: [CATEGORIES.group, CATEGORIES.web, CATEGORIES.data],
+  },
+  {
     title: 'THOUGHTS SHARING - DJANGO BASED APP',
     summary:
       "A cloud-based app where users could create account to read other users' articles, and share their ideas on such articles, and write their own articles.",
