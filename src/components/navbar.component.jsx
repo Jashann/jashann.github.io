@@ -20,7 +20,7 @@ export default function Navbar() {
   
   return (
     <nav className={`nav-vision ${scrolled ? 'scrolled' : ''}`}>
-      <div className="nav-logo">JG</div>
+      <Link to="/" className="nav-logo">JG</Link>
       
       <div className="nav-links">
         <Link to="/" className={isActive('/')}>
