@@ -6,6 +6,7 @@ import BackgroundOrbs from '../components/backgroundOrbs.component';
 export default function ProjectPage() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [expandedSkills, setExpandedSkills] = useState({});
 
   const categories = [
     { value: 'all', label: 'All', icon: 'apps-outline' },
@@ -133,27 +134,58 @@ export default function ProjectPage() {
               
               {project.tools && (
                 <div style={{ marginBottom: '1.5rem' }}>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
-                    {project.tools.split(',').slice(0, 5).map((tool, i) => (
-                      <span key={i} className="glass-panel glass-light" style={{
-                        padding: '0.3rem 0.6rem',
-                        borderRadius: '6px',
-                        fontSize: '0.85rem',
-                        color: 'var(--text-tertiary)'
-                      }}>
-                        {tool.trim()}
-                      </span>
-                    ))}
-                    {project.tools.split(',').length > 5 && (
-                      <span className="glass-panel glass-light" style={{
-                        padding: '0.3rem 0.6rem',
-                        borderRadius: '6px',
-                        fontSize: '0.85rem',
-                        color: 'var(--text-tertiary)'
-                      }}>
-                        +{project.tools.split(',').length - 5}
-                      </span>
-                    )}
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', alignItems: 'center' }}>
+                    {(() => {
+                      const tools = project.tools.split(',');
+                      const isExpanded = expandedSkills[project.title];
+                      const displayTools = isExpanded ? tools : tools.slice(0, 4);
+                      const hasMore = tools.length > 4;
+                      
+                      return (
+                        <>
+                          {displayTools.map((tool, i) => (
+                            <span key={i} className="glass-panel glass-light" style={{
+                              padding: '0.3rem 0.6rem',
+                              borderRadius: '6px',
+                              fontSize: '0.85rem',
+                              color: 'var(--text-tertiary)'
+                            }}>
+                              {tool.trim()}
+                            </span>
+                          ))}
+                          {hasMore && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setExpandedSkills(prev => ({
+                                  ...prev,
+                                  [project.title]: !prev[project.title]
+                                }));
+                              }}
+                              className="glass-panel glass-light"
+                              style={{
+                                padding: '0.3rem 0.6rem',
+                                borderRadius: '6px',
+                                fontSize: '0.85rem',
+                                color: 'var(--accent-blue)',
+                                cursor: 'pointer',
+                                border: 'none',
+                                background: 'var(--glass-light)',
+                                transition: 'all 0.2s ease'
+                              }}
+                              onMouseEnter={(e) => {
+                                e.target.style.background = 'var(--glass-medium)';
+                              }}
+                              onMouseLeave={(e) => {
+                                e.target.style.background = 'var(--glass-light)';
+                              }}
+                            >
+                              {isExpanded ? 'Show less' : `+${tools.length - 4} more`}
+                            </button>
+                          )}
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
               )}

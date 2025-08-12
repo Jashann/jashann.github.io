@@ -55,7 +55,7 @@ export const PROJECTS = [
       'A complete graph analysis software. This software was developed using all my previously made data analytics project concepts in a more practical way. This software uses my value compression algorithm for aligning the line graph inside the frame. Also, it has an evaluation panel, where this program evaluates the given raw data according to basic statistical formulas and show that information on the panel. This software can be used as an individual product for statistical / data science research tool or as a part of other software.',
     website: 'https://graph-interface.netlify.app/',
     github: 'https://github.com/JayedRafiProjects/graph-interface',
-    tools: '( Java, Java Swing ) & ( JavaScript, HTML5, CSS, Bootstrap )',
+    tools: 'Java, Java Swing, JavaScript, HTML5, CSS, Bootstrap',
     category: CATEGORIES.group,
     tags: [CATEGORIES.group, CATEGORIES.data],
   },

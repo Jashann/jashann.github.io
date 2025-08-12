@@ -27,7 +27,7 @@ export default function Navbar() {
           Home
         </Link>
         <Link to="/about-me" className={isActive('/about-me')}>
-          Experience
+          About Me
         </Link>
         <Link to="/projects" className={isActive('/projects')}>
           Projects
