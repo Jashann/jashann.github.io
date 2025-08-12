@@ -31,16 +31,16 @@ export default function AboutPage() {
             Work Experience
           </button>
           <button 
-            onClick={() => setActiveSection('skills')}
-            className={`btn-vision ${activeSection === 'skills' ? 'btn-primary' : 'btn-glass'}`}
-          >
-            Technical Skills
-          </button>
-          <button 
             onClick={() => setActiveSection('education')}
             className={`btn-vision ${activeSection === 'education' ? 'btn-primary' : 'btn-glass'}`}
           >
             Education
+          </button>
+          <button 
+            onClick={() => setActiveSection('skills')}
+            className={`btn-vision ${activeSection === 'skills' ? 'btn-primary' : 'btn-glass'}`}
+          >
+            Technical Skills
           </button>
         </div>
 
