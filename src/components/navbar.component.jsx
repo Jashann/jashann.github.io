@@ -32,10 +32,20 @@ export default function Navbar() {
         <Link to="/projects" className={isActive('/projects')}>
           Projects
         </Link>
-        <a href="https://github.com/Jashann" target="_blank" rel="noreferrer">
+        <a href="https://github.com/Jashann" target="_blank" rel="noreferrer" style={{
+          display: 'flex',
+          alignItems: 'center',
+          color: 'var(--text-secondary)',
+          transition: 'color 0.2s ease'
+        }}>
           <ion-icon name="logo-github"></ion-icon>
         </a>
-        <a href="https://www.linkedin.com/in/jashan7/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/jashan7/" target="_blank" rel="noreferrer" style={{
+          display: 'flex',
+          alignItems: 'center',
+          color: 'var(--text-secondary)',
+          transition: 'color 0.2s ease'
+        }}>
           <ion-icon name="logo-linkedin"></ion-icon>
         </a>
       </div>

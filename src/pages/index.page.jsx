@@ -27,9 +27,9 @@ export default function IndexPage() {
         }}>
           <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.8' }}>
             Computer Science graduate with <strong style={{ color: 'var(--text-primary)' }}>2+ years</strong> of 
-            hands-on experience building scalable applications. Proven track record of 
-            <strong style={{ color: 'var(--text-primary)' }}> optimizing performance by 60%</strong> and 
-            implementing automation solutions that <strong style={{ color: 'var(--text-primary)' }}>save 20+ hours weekly</strong>.
+            hands-on experience <strong style={{ color: 'var(--text-primary)' }}>building scalable applications</strong>. Passionate about crafting 
+            <strong style={{ color: 'var(--text-primary)' }}> beautiful, intuitive interfaces</strong> and 
+            delivering polished user experiences like <strong style={{ color: 'var(--text-primary)' }}>this portfolio</strong>.
           </p>
         </div>
         
