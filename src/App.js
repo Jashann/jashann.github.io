@@ -9,7 +9,6 @@ import { URL_ROUTES } from "./assets/helpers/URL_ROUTES.routes"
 import ScrollToTop from "./components/ScrollTop";
 
 import Navbar from "./components/navbar.component"
-import Footer from "./components/footer.component"
 
 import IndexPage from "./pages/index.page"
 import ProjectPage from "./pages/projects.page"
@@ -27,7 +26,7 @@ function App() {
   return (
    <HashRouter>
 
-      <div className="d-flex flex-column min-vh-100">
+      <div style={{ minHeight: '100vh' }}>
         
         <ScrollToTop>
 
@@ -46,8 +45,6 @@ function App() {
 
             <Route path="*"                                 element={ <NotFoundPage /> } />
           </Routes>
-
-          <Footer />
 
         </ScrollToTop>
         

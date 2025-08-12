@@ -1,119 +1,44 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { URL_ROUTES } from '../assets/helpers/URL_ROUTES.routes'
+import React, { useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-export default function Navbar({ toggleHandle }) {
-  function closeMenu() {
-    document.querySelector('.toggler').checked = false
-  }
-
+export default function Navbar() {
+  const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+  const isActive = (path) => {
+    return location.pathname === path ? 'active' : '';
+  };
+  
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div className="container">
-        <Link className="navbar-brand container-center" to={URL_ROUTES.index}>
-          <p className="m-0 logo-text">Jashanjot</p>
+    <nav className={`nav-vision ${scrolled ? 'scrolled' : ''}`}>
+      <div className="nav-logo">JG</div>
+      
+      <div className="nav-links">
+        <Link to="/" className={isActive('/')}>
+          Home
         </Link>
-
-        <div className="mobile-menu">
-          <input
-            type="checkbox"
-            className="toggler"
-            aria-checked="false"
-            tabIndex="0"
-          />
-          <div className="hamburger">
-            <div></div>
-          </div>
-          <div className="menu">
-            <div>
-              <div>
-                <ul>
-                  <li>
-                    <Link
-                      className="in-flex-center align-items-start"
-                      onClick={closeMenu}
-                      to={URL_ROUTES.index}
-                      rel="noreferrer"
-                    >
-                      {' '}
-                      <ion-icon
-                        class="ms-2"
-                        size="large"
-                        name="home-outline"
-                      ></ion-icon>{' '}
-                      Home{' '}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="in-flex-center align-items-start"
-                      onClick={closeMenu}
-                      to={URL_ROUTES.projects}
-                      rel="noreferrer"
-                    >
-                      {' '}
-                      <ion-icon
-                        class="ms-2"
-                        size="large"
-                        name="code-slash-outline"
-                      ></ion-icon>{' '}
-                      Projects{' '}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="in-flex-center align-items-start"
-                      onClick={closeMenu}
-                      to={URL_ROUTES.about}
-                      rel="noreferrer"
-                    >
-                      {' '}
-                      <ion-icon
-                        class="ms-2"
-                        size="large"
-                        name="person-outline"
-                      ></ion-icon>{' '}
-                      About{' '}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="collapse navbar-collapse" id="navbarColor01">
-          <ul className="navbar-nav align-items-center ms-auto">
-            <li className="nav-item">
-              <Link
-                className="nav-link in-flex-center align-items-start"
-                to={URL_ROUTES.index}
-              >
-                {' '}
-                <ion-icon name="home-outline"></ion-icon> Home{' '}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link in-flex-center align-items-start"
-                to={URL_ROUTES.projects}
-              >
-                {' '}
-                <ion-icon name="code-slash-outline"></ion-icon> Projects{' '}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link in-flex-center align-items-start"
-                to={URL_ROUTES.about}
-              >
-                {' '}
-                <ion-icon name="person-outline"></ion-icon> About{' '}
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Link to="/about-me" className={isActive('/about-me')}>
+          Experience
+        </Link>
+        <Link to="/projects" className={isActive('/projects')}>
+          Projects
+        </Link>
+        <a href="https://github.com/Jashann" target="_blank" rel="noreferrer">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/jashan7/" target="_blank" rel="noreferrer">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
       </div>
     </nav>
-  )
+  );
 }

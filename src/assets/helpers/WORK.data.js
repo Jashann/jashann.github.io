@@ -1,48 +1,44 @@
 export const WORK_EXPERIENCE = [
   {
-    title: 'Application Developer Co-op',
-    company: 'Elmer Manufacturing',
-    duration: 'May 2024 - Aug 2024',
+    title: 'Junior Developer (Intern)',
+    company: 'Price Industries',
+    duration: 'May 2025 - Aug 2025',
     location: 'Winnipeg, MB, Canada',
     description: [
-      'Developed a client-centeric cross-platform app using <strong> <strong> C#, ASP.NET, MVVM, MAUI, Azure AD B2C.',
-      'Developed RESTful APIs for back-end with <strong> <strong> ASP.NET Web API 2 using C#, Entity Framework, SQL Server.',
-      'Set up <strong> <strong> CI/CD </strong> Azure with <strong> Azure DevOps </strong> and wrote automated unit/integration tests with <strong> xUnit.',
+      'Developed features for <strong>CPQ (Configure, Price, Quote)</strong> software serving <strong>2000+ sales representatives</strong> globally, reducing quote generation time by <strong>15%</strong>.',
+      'Built and optimized <strong>C# (.NET Core)</strong> backend services with SQL Server integration, improving real-time pricing accuracy by <strong>20%</strong> for specific products.',
+      'Implemented responsive <strong>Angular components with TypeScript</strong>, significantly improving user task completion rates and reducing training time for new sales staff.',
     ],
   },
-
   {
-    title: 'Software Engineer Co-op',
-    company: 'Elmer Manufacturing',
-    duration: 'May 2023 - Dec 2023',
+    title: 'Application Developer (Co-op)',
+    company: 'Government of Manitoba',
+    duration: 'Jan 2025 - Apr 2025',
     location: 'Winnipeg, MB, Canada',
     description: [
-      'Worked as part of an agile team to develop new and existing features on full-stack production projects using PHP, Laravel, Python, FastApi, VueJs and JavaScript.',
-      'Optimized the project for running on a microcontroller by 13% by batching multiple API calls as a transaction reducing database accesses and access locks, and investigating what’s slow using profiling in PostgreSQL.',
-      'Conducted thorough profiling to identify and rectify slow processes, resulting in improved system performance.',
-      'Skills: <strong> <strong> Object-Relational Mapping (ORM) · Docker · AWS · Unit Testing · C# · SQL · Git · Databases · Agile Methodologies · Unix · REST APIs · Python (Programming Language) · State Management (State Machines) · Design pattern (MVVM)',
+      'Worked on Manitoba Health Replacement App using <strong>Microsoft Power Platform (Power Apps)</strong> and <strong>Azure Cloud services</strong>, serving more than <strong>200,000+ Manitobans</strong> who applied for a new health card.',
+      'Created <strong>5+ Power Automate workflows</strong> that automated manual data entry processes, saving <strong>20 hours per week</strong> and reducing processing errors by <strong>12%</strong>.',
     ],
   },
-
   {
-    title: 'Software Engineer Intern',
-    company: 'Megalodon Lab',
-    duration: 'May 2022 - Aug 2022',
+    title: 'Full Stack Engineer (Co-op)',
+    company: 'Elmer\'s Manufacturing',
+    duration: 'May 2023 - Aug 2024',
     location: 'Winnipeg, MB, Canada',
     description: [
-      'Engineered Product Evaluation and Prediction software to reduce the cost of data analytics for small retail businesses, as part of a student-led, non-profit, open-source development team.',
-      'Programmed a data refinement algorithm and utilized a featured data structure in Java to <strong> <strong> store, filter, optimize and survey a sample data set of 540000+ invoices.',
-      'Designed a Swing GUI to display the data predictions derived from 10+ metric methods and a machine learning algorithm created to maximize accuracy.',
+      'Developed full-stack features for <strong>2 production applications</strong> using <strong>PHP/Laravel, Python/FastAPI, and Vue.js</strong>, serving <strong>1,000+ daily active users</strong>.',
+      'Optimized database performance by implementing transaction batching and <strong>PostgreSQL query optimization</strong>, reducing database load by <strong>24%</strong> and improving response times by <strong>17%</strong>.',
+      'Established automated <strong>CI/CD pipeline using Azure DevOps</strong> and xUnit testing, reducing deployment time by <strong>70%</strong> and catching <strong>95% of bugs</strong> before production.',
     ],
   },
-
   {
-    title: 'TA/Grader',
+    title: 'Teaching Assistant',
     company: 'University of Manitoba',
     duration: 'Sep 2022 - Dec 2022',
     location: 'Winnipeg, MB, Canada',
     description: [
-      'Evaluated students’ assignments, midterm exams, and final exams for COMP 2160 Programming Practices, which primarily deals with memory management, testing in C, and interacting with Unix.',
+      'Maximized students\' potential with curated lessons provided through my understanding and materials prepared with the professor\'s assistance in <strong>Programming Practices (C)</strong>.',
+      'Evaluated students\' assignments, midterm exams, and final exams focusing on memory management, testing in C, and Unix systems.',
     ],
   },
 ];

@@ -1,62 +1,68 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { URL_ROUTES } from '../assets/helpers/URL_ROUTES.routes'
-
 
 export default function IndexPage() {
   return (
-    <>
-      <header className="main-header">
-        <div className="main-content">
-          <div className="main-content-text lead p-4 mb-5">
-            <p className="text-justify">
-              Hello there,
-              <br />
-              I'm Jashan, currently pursuing the Bachelors in Computer Science at
-              University of Manitoba, with a focus on developing
-              scalable and reliable backend systems. My portfolio includes a diverse range of
-              applications, from data processing and visualization tools to
-              versatile general-purpose programs.
-            </p>
-            <p className="text-start mb-0">
-              Feel free to contact me on email at
-              <a
-                className="text-decoration-none ms-1 text-light in-flex-center"
-                href={'mailto:' + URL_ROUTES.a_email}
-                rel="noreferrer"
-              >
-                {URL_ROUTES.a_email}
-                <ion-icon size="small" name="mail-outline"></ion-icon>
-              </a>
-              <span className="in-flex-center"> </span> or
-              <a
-                className="text-decoration-none ms-1 text-light in-flex-center"
-                target="_blank"
-                href={URL_ROUTES.a_linkedIn}
-                rel="noreferrer"
-              >
-                LinkedIn
-                <ion-icon size="small" name="logo-linkedin"></ion-icon>
-              </a>
-            </p>
+    <div className="hero-vision">
+      <div className="hero-orbs">
+        <div className="orb orb-1"></div>
+        <div className="orb orb-2"></div>
+        <div className="orb orb-3"></div>
+      </div>
+      
+      <div className="hero-content">
+        <div className="hero-badge">
+          <span className="badge-dot"></span>
+          Available for opportunities
+        </div>
+        
+        <h1 className="hero-title">Jashanjot Gill</h1>
+        <p className="hero-subtitle">Full Stack Software Engineer</p>
+        
+        <div className="glass-panel glass-light" style={{ 
+          padding: '2rem', 
+          marginBottom: '3rem',
+          maxWidth: '800px',
+          margin: '0 auto 3rem'
+        }}>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: '1.8' }}>
+            Computer Science graduate with <strong style={{ color: 'var(--text-primary)' }}>2+ years</strong> of 
+            hands-on experience building scalable applications. Proven track record of 
+            <strong style={{ color: 'var(--text-primary)' }}> optimizing performance by 60%</strong> and 
+            implementing automation solutions that <strong style={{ color: 'var(--text-primary)' }}>save 20+ hours weekly</strong>.
+          </p>
+        </div>
+        
+        <div className="hero-buttons">
+          <Link to="/about-me" className="btn-vision btn-primary">
+            <ion-icon name="briefcase-outline"></ion-icon>
+            View Experience
+          </Link>
+          <Link to="/projects" className="btn-vision btn-glass">
+            <ion-icon name="code-slash-outline"></ion-icon>
+            Browse Projects
+          </Link>
+          <a href="mailto:gilljs5@myumanitoba.ca" className="btn-vision btn-glass">
+            <ion-icon name="mail-outline"></ion-icon>
+            Get in Touch
+          </a>
+        </div>
+        
+        <div style={{ marginTop: '4rem', display: 'flex', gap: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+          <div className="glass-panel glass-light" style={{ padding: '1rem 2rem', borderRadius: '16px' }}>
+            <div style={{ fontSize: '1.5rem', fontWeight: '600', color: 'var(--text-primary)' }}>4+</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>Co-op Positions</div>
           </div>
-
-          <div className="main-header-btns d-flex">
-            <Link
-              to={URL_ROUTES.projects}
-              className="m-1 btn btn-secondary main-button"
-            >
-              Projects <ion-icon size="large" name="laptop-outline"></ion-icon>{' '}
-            </Link>
-            <Link
-              to={URL_ROUTES.about}
-              className="m-1 btn btn-secondary main-button"
-            >
-              About Me <ion-icon size="large" name="book-outline"></ion-icon>{' '}
-            </Link>
+          <div className="glass-panel glass-light" style={{ padding: '1rem 2rem', borderRadius: '16px' }}>
+            <div style={{ fontSize: '1.5rem', fontWeight: '600', color: 'var(--text-primary)' }}>200k+</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>Users Served</div>
+          </div>
+          <div className="glass-panel glass-light" style={{ padding: '1rem 2rem', borderRadius: '16px' }}>
+            <div style={{ fontSize: '1.5rem', fontWeight: '600', color: 'var(--text-primary)' }}>60%</div>
+            <div style={{ fontSize: '0.9rem', color: 'var(--text-tertiary)' }}>Performance Boost</div>
           </div>
         </div>
-      </header>
-    </>
+      </div>
+    </div>
   );
 }

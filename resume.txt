@@ -1,0 +1,44 @@
+Jashanjot Gill
+Winnipeg, MB — gilljs5@myumanitoba.ca — (604) 772-2002 — linkedin.com/in/jashan7
+SUMMARY
+A Computer Science New Grad with 2+ years of hands-on software development experience through co-op
+positions and internships. Proven track record of building scalable full-stack applications, optimizing system
+performance by up to 60%, and implementing automation solutions that reduced manual processes by 10%.
+Experienced in C#, Python, JavaScript/TypeScript, and modern frameworks including .NET, Angular, and
+React. Seeking full-time software engineering opportunities starting Aug 2025.
+WORK EXPERIENCE
+Junior Developer (Intern) May 2025–Aug 2025
+PRICE INDUSTRIES, Winnipeg, MB
+• Developed features for CPQ (Configure, Price, Quote) software serving 2000+ sales representatives across
+the globe, reducing quote generation time by 15% which resulted in improved user experience.
+• Built and optimized C# (.NET Core) backend services with SQL Server integration, improving real-time
+pricing accuracy by 20% for specific products.
+• Implemented responsive Angular components with TypeScript, resulting in a significant improvement
+in user task completion rates and reducing training time for new sales staff
+Application Developer (Co-op) Jan 2025–Apr 2025
+GOVERNMENT OF MANITOBA, Winnipeg, MB
+• Worked on Manitoba Health Replacement App using Microsoft Power Platform (Power Apps) and
+Azure Cloud services, serving more than 200,000+ Manitobans who applied for a new health card.
+• Created 5+ Power Automate workflows that automated manual data entry processes, saving 20 hours
+per week and reducing processing errors by 12%.
+Full Stack Engineer (Co-op) May 2023–Aug 2024
+ELMER’S MANUFACTURING, Winnipeg, MB
+• Developed full-stack features for 2 production applications using PHP/Laravel, Python/FastAPI,
+and Vue.js, serving 1,000+ daily active users.
+• Optimized database performance by implementing transaction batching and PostgreSQL query optimization, reducing database load by 24% and improving response times by 17%.
+• Established automated CI/CD pipeline using Azure DevOps and xUnit testing, reducing deployment
+time by 70% and catching 95% of bugs before production
+Teaching Assistant Sep 2022–Dec 2022
+UNIVERSITY OF MANITOBA, Winnipeg, MB
+• Maximize students’ potential with curated lessons provided through my understanding and materials
+prepared with the professor’s assistance in Programming Practices (C).
+EDUCATION
+Bachelor of Science in Computer Science Expected: Aug 2025
+UNIVERSITY OF MANITOBA, Winnipeg, MB
+Relevant Coursework: Data Structures & Algorithms, OOP, Operating Systems, Databases, Software Engineering I & II, HCI, Distributed Computing
+Mathematics: Discrete Mathematics, Linear Algebra, Calculus I & II, Statistics I & IITECHNICAL SKILLS
+• Programming Languages: C#, Python, JavaScript, TypeScript, SQL, Java, C/C++, PHP
+• Frameworks: React.js, Vue.js, Angular, Node.js, ASP.NET Core, Django, FastAPI, Laravel, Express.js
+• Databases & Cloud: PostgreSQL, MySQL, MongoDB, Redis, SQL Server, Microsoft Azure, AWS,
+Docker
+• Tools & Technologies: Git, REST APIs, GraphQL, CI/CD (Azure DevOps, GitHub Actions), Agile/Scrum, Linux

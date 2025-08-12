@@ -11,27 +11,53 @@ export default function Contact() {
 
   return (
     <div className='contact my-5'>
-
-      <div className='flex-center mb-5'>
-        <button onClick={handleContact} className='btn btn-primary in-flex-center'> Contact <ion-icon size="large" name="arrow-down-circle-outline"></ion-icon> </button>
+      <h3 className='section-title'>Get In Touch</h3>
+      
+      <div className='flex-center mb-4'>
+        <button onClick={handleContact} className='btn-modern btn-primary-gradient'>
+          {showContact ? 'Hide' : 'Show'} Contact Info
+          <ion-icon name={showContact ? "arrow-up-circle-outline" : "arrow-down-circle-outline"}></ion-icon>
+        </button>
       </div>
 
       {
         showContact &&
-          <div className="container align">
-            <div className="row">
-              <div className="col-12">
-                <div className='contact-data p-3 flex-center'>
-                  <div>
-                    <p>Email: {URL_ROUTES.a_email_personal}</p>
-                    <p>Phone: 604-772-2002</p>
-                    <p className="mb-0">Location: {URL_ROUTES.location}</p>
+          <div className="container align fade-in">
+            <div className="row justify-content-center">
+              <div className="col-md-8">
+                <div className='modern-card text-center'>
+                  <h4 className='mb-4'>Let's Connect!</h4>
+                  <div className='contact-info'>
+                    <p className='mb-3'>
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <a href={'mailto:' + URL_ROUTES.a_email} className='text-decoration-none ms-2'>
+                        {URL_ROUTES.a_email}
+                      </a>
+                    </p>
+                    <p className='mb-3'>
+                      <ion-icon name="call-outline"></ion-icon>
+                      <span className='ms-2'>{URL_ROUTES.a_phone}</span>
+                    </p>
+                    <p className='mb-3'>
+                      <ion-icon name="location-outline"></ion-icon>
+                      <span className='ms-2'>{URL_ROUTES.location}</span>
+                    </p>
+                    <div className='mt-4 d-flex justify-content-center gap-3'>
+                      <a href={URL_ROUTES.a_linkedIn} target="_blank" rel="noreferrer" 
+                         className='btn-modern btn-outline-gradient'>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        LinkedIn
+                      </a>
+                      <a href={URL_ROUTES.a_github} target="_blank" rel="noreferrer"
+                         className='btn-modern btn-outline-gradient'>
+                        <ion-icon name="logo-github"></ion-icon>
+                        GitHub
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-
             </div>
-
           </div>
       }
     </div>
