@@ -9,13 +9,24 @@ export const CATEGORIES = {
 
 export const PROJECTS = [
   {
-    title: 'Money Lens',
+    title: 'Pique - Social Networking App',
     summary:
-      'A personal finance web application that makes money management intuitive and user-friendly. Features secure financial data import through bank connections and CSV uploads, with powerful search, filter, and categorization tools. Includes interactive graphs, statistics, and custom spending/savings goal tracking.',
-    github: 'https://github.com/Money-Lens/Money-Lens-App',
-    tools: 'React, Node.js, Express, MongoDB, Plaid API, Chart.js, JWT Auth, Material-UI',
-    category: CATEGORIES.group,
-    tags: [CATEGORIES.group, CATEGORIES.web, CATEGORIES.data],
+      'A cross-platform social networking app that brings people together within 100 meters radius, promoting face-to-face socializing. Features a tailored algorithm for location tracking with minimal battery usage and a React Native interface for enhanced user retention and usability.',
+    website: 'https://drive.google.com/file/d/1G1TmAqHqRMuk9R4M9LJCIEZGp2_wtUzE/view?usp=sharing',
+    github: 'https://github.com/nnm2602/robobison-pique-submission',
+    tools: 'JavaScript, Node.js, React Native, Location Services, Battery Optimization, Cross-Platform Development',
+    category: CATEGORIES.personal,
+    tags: [CATEGORIES.personal, CATEGORIES.web],
+  },
+  {
+    title: 'University Database Management System',
+    summary:
+      'Comprehensive database management system streamlining university students and staff data records. Features efficient JDBC queries and stored procedures achieving 50% reduction in data retrieval time. Built on high-performance PostgreSQL with 10+ tables handling 10,000+ rows, with intuitive JavaFX interface supporting full CRUD operations.',
+    website: 'https://drive.google.com/file/d/1G1TmAqHqRMuk9R4M9LJCIEZGp2_wtUzE/view?usp=sharing',
+    github: 'https://github.com/Jashann/Hospital-Database-Management-System',
+    tools: 'Java, PostgreSQL, JDBC, JavaFX, Scene Builder, SQL, Stored Procedures, Database Optimization',
+    category: CATEGORIES.personal,
+    tags: [CATEGORIES.personal, CATEGORIES.data],
   },
   {
     title: 'THOUGHTS SHARING - DJANGO BASED APP',
@@ -28,6 +39,15 @@ export const PROJECTS = [
       'Django, Restful API, SQL, JavaScript, Server-side Rendering, Authentication',
     category: CATEGORIES.personal,
     tags: [CATEGORIES.personal, CATEGORIES.web],
+  },
+  {
+    title: 'Money Lens',
+    summary:
+      'A personal finance web application that makes money management intuitive and user-friendly. Features secure financial data import through bank connections and CSV uploads, with powerful search, filter, and categorization tools. Includes interactive graphs, statistics, and custom spending/savings goal tracking.',
+    github: 'https://github.com/Money-Lens/Money-Lens-App',
+    tools: 'React, Node.js, Express, MongoDB, Plaid API, Chart.js, JWT Auth, Material-UI',
+    category: CATEGORIES.group,
+    tags: [CATEGORIES.group, CATEGORIES.web, CATEGORIES.data],
   },
   {
     title: 'GRAPH INTERFACE',
